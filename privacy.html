@@ -8,7 +8,7 @@
 </head>
 <body>
   <h1>SunMoney — Privacy Policy (English)</h1>
-  <p>Last updated: 2026-08-18</p>
+  <p>Last updated: 2026-08-20</p>
   <p>SunMoney ("we", "us", "the App") helps users track personal and shared expenses, sync data between devices, and manage investments. This Privacy Policy explains what information we collect, how we use it, who we share it with, and the choices you have.</p>
 
   <h2>Data we collect</h2>
@@ -18,7 +18,8 @@
     <li><strong>Local device data</strong>: App data stored locally in the device’s SQLite database for offline-first use.</li>
     <li><strong>Sync data</strong>: Data uploaded to our backend (e.g., Firebase Realtime Database) to sync across devices and shared accounts.</li>
     <li><strong>Payment & subscription data</strong>: Subscription and purchase status are handled by RevenueCat (or your payment provider). We do not collect raw payment card details — payments are processed by third-party payment processors.</li>
-    <li><strong>Device & diagnostics</strong>: Device model, OS version, app version, crash logs, and anonymous usage analytics for improving the app.</li>
+    <li><strong>Device & diagnostics</strong>: Device model, OS version, app version, and crash logs (Firebase Crashlytics) for improving the app.</li>
+    <li><strong>Advertising identifiers</strong>: The app shows ads via Google AdMob (Premium accounts excluded), which may collect device/advertising identifiers to serve and measure ads. Users in the EEA and UK are shown a consent form (per Google's UMP framework) before any ad personalization; you can review this choice anytime under Settings → "Ad privacy choices".</li>
     <li><strong>Other data you choose to share</strong>: e.g., contacts, if you use any contact-sharing feature (only if such feature is present — see in-app prompts).</li>
   </ul>
 
@@ -26,17 +27,18 @@
   <ul>
     <li>Provide app features: store and sync your expense and investment data across your devices and with partners you explicitly pair with.</li>
     <li>Payments & subscriptions: manage and validate active subscriptions and entitlements via RevenueCat.</li>
-    <li>Improve the app: aggregate and anonymized analytics and crash reports to improve stability and performance.</li>
+    <li>Advertising: display and measure ads via Google AdMob (not applicable to Premium accounts).</li>
+    <li>Improve the app: aggregate and anonymized crash reports to improve stability and performance.</li>
     <li>Security & fraud prevention: detect abuse and secure user accounts.</li>
     <li>Legal & compliance: respond to valid legal requests and enforce our terms.</li>
   </ul>
 
   <h2>Third parties and data sharing</h2>
-  <p>We may share data with the following third parties to operate the app. Replace or remove any provider that you do not use.</p>
+  <p>We share data with the following third parties to operate the app:</p>
   <ul>
-    <li>Firebase Realtime Database (Google)</li>
-    <li>RevenueCat (or your configured payment provider)</li>
-    <li>Analytics & crash reporting (e.g., Firebase Analytics, Crashlytics, Sentry)</li>
+    <li>Firebase Realtime Database, Firebase Authentication, Firebase Crashlytics (Google)</li>
+    <li>RevenueCat (manages Premium entitlements; actual payment is processed via Google Play Billing)</li>
+    <li>Google AdMob (ad serving)</li>
   </ul>
   <p>We share only the minimum data required with these providers to operate the app. We do not sell your personal data.</p>
 
@@ -49,8 +51,8 @@
   <h2>Your choices and rights</h2>
   <ul>
     <li>Access & correction: You can view and edit your data in the app.</li>
-    <li>Deletion: You may request account deletion in-app or by contacting us (see below).</li>
-    <li>Opt-out of analytics: See the app settings to opt out of analytics collection where available.</li>
+    <li>Deletion: You can delete your account and all associated data (wallets, transactions, budgets, debts, investments, etc.) directly in the app under Settings → "Delete account". Deletion is permanent and cannot be undone. If you can't access the app, you can request deletion by emailing us below.</li>
+    <li>Ad privacy choices: EEA/UK users can review or change their ad personalization choice under Settings → "Ad privacy choices".</li>
     <li>GDPR/CCPA: If you are in the EU or California, you may have rights to access, correct, delete, or obtain a copy of your personal data. To exercise these rights, contact us.</li>
   </ul>
 

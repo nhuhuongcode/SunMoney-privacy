@@ -8,7 +8,7 @@
 </head>
 <body>
   <h1>SunMoney — Chính sách Quyền riêng tư (Tiếng Việt)</h1>
-  <p>Cập nhật lần cuối: 2026-08-18</p>
+  <p>Cập nhật lần cuối: 2026-08-20</p>
   <p>MoneySun ("chúng tôi", "ứng dụng") giúp người dùng theo dõi chi tiêu cá nhân và chia sẻ, đồng bộ dữ liệu giữa các thiết bị và quản lý đầu tư. Chính sách này giải thích dữ liệu nào chúng tôi thu thập, cách sử dụng, chia sẻ, thời gian lưu trữ và quyền của bạn liên quan đến dữ liệu cá nhân.</p>
 
   <h2>Những dữ liệu chúng tôi thu thập</h2>
@@ -18,7 +18,8 @@
     <li><strong>Dữ liệu lưu trên thiết bị</strong>: Dữ liệu ứng dụng lưu cục bộ (ví dụ: SQLite) để hỗ trợ làm việc offline.</li>
     <li><strong>Dữ liệu đồng bộ</strong>: Dữ liệu được tải lên backend (ví dụ: Firebase Realtime Database) để đồng bộ giữa các thiết bị và tài khoản chia sẻ.</li>
     <li><strong>Dữ liệu thanh toán & đăng ký</strong>: Trạng thái đăng ký và mua hàng được quản lý bởi RevenueCat (hoặc nhà cung cấp thanh toán). Chúng tôi không lưu thẻ thanh toán thô — thanh toán được xử lý bởi nhà cung cấp bên thứ ba.</li>
-    <li><strong>Thiết bị & chẩn đoán</strong>: Mẫu thiết bị, phiên bản hệ điều hành, phiên bản ứng dụng, báo cáo lỗi/crash và phân tích ẩn danh để cải thiện ứng dụng.</li>
+    <li><strong>Thiết bị & chẩn đoán</strong>: Mẫu thiết bị, phiên bản hệ điều hành, phiên bản ứng dụng, báo cáo lỗi/crash (Firebase Crashlytics) để cải thiện ứng dụng.</li>
+    <li><strong>Mã định danh quảng cáo</strong>: Ứng dụng hiển thị quảng cáo qua Google AdMob (trừ tài khoản Premium), có thể thu thập mã định danh thiết bị/quảng cáo để hiển thị và đo lường quảng cáo. Với người dùng tại Châu Âu (EEA) và Vương quốc Anh, ứng dụng hiển thị màn hình xin sự đồng ý (theo chuẩn UMP của Google) trước khi cá nhân hoá quảng cáo; bạn có thể xem lại lựa chọn này bất cứ lúc nào tại Cài đặt → "Quyền riêng tư quảng cáo".</li>
     <li><strong>Dữ liệu khác bạn chọn chia sẻ</strong>: Ví dụ: danh bạ nếu bạn dùng tính năng chia sẻ với danh bạ (chỉ khi bạn cấp quyền).</li>
   </ul>
 
@@ -26,17 +27,18 @@
   <ul>
     <li>Cung cấp tính năng ứng dụng: Lưu và đồng bộ dữ liệu chi tiêu, chia sẻ giữa người dùng theo yêu cầu.</li>
     <li>Thanh toán & đăng ký: Quản lý trạng thái đăng ký, xác thực quyền truy cập.</li>
+    <li>Hiển thị quảng cáo: Hiển thị và đo lường hiệu quả quảng cáo thông qua Google AdMob (không áp dụng cho tài khoản Premium).</li>
     <li>Cải thiện sản phẩm: Phân tích tổng hợp và báo cáo lỗi để nâng cao hiệu suất và độ ổn định.</li>
     <li>Bảo mật & chống lạm dụng: Phát hiện hành vi lừa đảo, bảo vệ tài khoản.</li>
     <li>Tuân thủ pháp luật: Phản hồi yêu cầu pháp lý hợp lệ và thực thi Điều khoản dịch vụ.</li>
   </ul>
 
   <h2>Chia sẻ với bên thứ ba</h2>
-  <p>Chúng tôi có thể chia sẻ dữ liệu với các bên thứ ba sau để vận hành ứng dụng. Thay thế hoặc xóa nhà cung cấp nếu bạn không sử dụng.</p>
+  <p>Chúng tôi chia sẻ dữ liệu với các bên thứ ba sau để vận hành ứng dụng:</p>
   <ul>
-    <li>Firebase Realtime Database (Google)</li>
-    <li>RevenueCat (hoặc nhà cung cấp thanh toán của bạn)</li>
-    <li>Dịch vụ phân tích & báo cáo lỗi (ví dụ: Firebase Analytics, Crashlytics, Sentry)</li>
+    <li>Firebase Realtime Database, Firebase Authentication, Firebase Crashlytics (Google)</li>
+    <li>RevenueCat (quản lý gói Premium; thanh toán thực tế xử lý qua Google Play Billing)</li>
+    <li>Google AdMob (hiển thị quảng cáo)</li>
   </ul>
   <p>Chúng tôi chỉ chia sẻ dữ liệu tối thiểu cần thiết với các nhà cung cấp này để ứng dụng hoạt động. Chúng tôi không bán dữ liệu cá nhân của bạn.</p>
 
@@ -49,8 +51,8 @@
   <h2>Quyền và lựa chọn của bạn</h2>
   <ul>
     <li>Truy cập & chỉnh sửa: Bạn có thể xem và chỉnh sửa dữ liệu trong ứng dụng.</li>
-    <li>Xóa: Yêu cầu xóa tài khoản thông qua cài đặt trong ứng dụng hoặc liên hệ với chúng tôi.</li>
-    <li>Từ chối phân tích: Nếu có tuỳ chọn, bạn có thể tắt thu thập phân tích trong cài đặt.</li>
+    <li>Xóa: Bạn có thể tự xóa tài khoản và toàn bộ dữ liệu liên quan (ví, giao dịch, ngân sách, sổ nợ, đầu tư...) ngay trong ứng dụng tại Cài đặt → "Xóa tài khoản". Việc xóa là vĩnh viễn và không thể khôi phục. Nếu không thể mở ứng dụng, bạn có thể gửi yêu cầu xóa qua email bên dưới.</li>
+    <li>Tuỳ chọn quảng cáo: Với người dùng tại EEA/Vương quốc Anh, bạn có thể xem hoặc thay đổi lựa chọn quảng cáo cá nhân hoá tại Cài đặt → "Quyền riêng tư quảng cáo".</li>
     <li>GDPR/CCPA: Nếu bạn ở EU hoặc California, bạn có thể có quyền truy cập, sửa, xóa hoặc nhận bản sao dữ liệu cá nhân. Liên hệ để thực hiện quyền này.</li>
   </ul>
 
